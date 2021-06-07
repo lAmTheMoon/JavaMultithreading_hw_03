@@ -3,7 +3,7 @@ package hw_03_1;
 public class Main {
     public static void main(String[] args) {
         User user = new User();
-        Toy toy = new Toy(user);
+        Toy toy = new Toy();
         Thread threadUser = new Thread(user);
         Thread threadToy = new Thread(toy);
         threadUser.start();
